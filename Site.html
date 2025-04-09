@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>My Website section pages</title>
-    
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>My Website section pages</title>
     <link rel="stylesheet" href="https://wakdev-faffle.github.io/Web-gallery/FontFamily.css">
     <style>
+        p {
+            margin: 0;
+        }
         .container {
             display: flex;
             flex-direction: column;
@@ -23,11 +28,22 @@
             height: 230px;
             border: 4px dotted #000;
         }
+        .request_error > p {
+            font-family: 'Nunito Sans';
+            font-size: 1em;
+            color: #5e5e5e;
+        }
     </style>
-  </head>
+</head>
   <body>
     <div class="container">
         <header>My creations</header>
-        <div class="content_carousel"></div>
+        <div class="content_carousel">
+    <div class="request_error" style="display: flex;flex-direction: column;align-items: center;justify-content: center;height: 100%;">
+        <image style="position: relative;" data="https://wakdev-faffle.github.io/Web-gallery/WakOC_Error404.svg"></image>
+        <p>I'm sorry. I just started making the page. it's coming soon...</p>
     </div>
-</body></html>
+</div>
+    </div>
+</body>
+</html>
